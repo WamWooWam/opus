@@ -816,6 +816,7 @@ int opus_decode(OpusDecoder *st, const unsigned char *data,
       for (i=0;i<ret*st->channels;i++)
          pcm[i] = FLOAT2INT16(out[i]);
    }
+
    RESTORE_STACK;
    return ret;
 }
